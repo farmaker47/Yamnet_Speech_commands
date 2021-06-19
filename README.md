@@ -2,7 +2,7 @@
 
 This is an effort to classify speech commands with the Yamnet model.
 
-This repository contains 4 different notebooks.
+This repository contains 4 different notebooks. Below are some superficial details. More info can be found inisde them.
 
 ### First notebook (Plain_Convolution_Speech_commands.ipynb)
 
