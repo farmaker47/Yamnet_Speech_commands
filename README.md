@@ -18,9 +18,11 @@ Note: In this notebook ReduceMean is applied to the output of the model after cl
 
 Inside this notebook there is the same manipulation of audio files with the previous one but here we do not use Datasets library. Waveforms are created and fed into the Yamnet model. Here we get the mean of the embeddings output on 0 axis and this becomes the input of the final classification model. The notebook provides code for testing audio files, convert and save the 2 models into one and finally generate the .tflite model and test it with the TensorFlow Lite Interpreter.
 
+Note: In this notebook ReduceMean is applied to the output of the Yamnet model before the final classification layer.
+
 ### Forth notebook (Model_Maker_Speech_commands.ipynb)
 
-This is an example of sound classification with the use of the TensorFlow Lite Model Maker. You can find extensive info [here](https://www.tensorflow.org/tutorials/audio/transfer_learning_audio). For comparison here we use the same Speech commands dataset. With fewer lines of code from every other notebook we train the model and we generate the .tflite file (which gives two outputs instead of one that the previous efforts give)! There is also code to test test audio files.
+This is an example of sound classification with the use of the TensorFlow Lite Model Maker. You can find extensive info [here](https://www.tensorflow.org/tutorials/audio/transfer_learning_audio). For comparison here we use the same Speech commands dataset. With fewer lines of code from every other notebook we train the model and we generate the .tflite file (which gives two outputs instead of one that the previous efforts give)! There is also code to test custom audio files.
 
 # Android example
 
